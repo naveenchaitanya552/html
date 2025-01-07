@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device_width,initial_scale=1.0">
+<title>understanding HTML tables</title>
+<style>
+body{
+font_family:Arial,sans_serif;
+background_color:#f4f4f4;
+color:#333;
+margin:20px;
+}
+h1{
+color:#333;
+}
+table{
+width:100%;
+border_collapse:collapse;
+margin_bottom:20px;
+}
+table,th,td{
+border:1px solid#333;
+}
+th,td{
+padding:10px;
+text_align:left;
+}
+th{
+background_color:#2f22f2;
+}
+</style>
+</head>
+<body>
+<h1>understanding HTML tables</h1>
+<p>in HTML,tables are created using the <code>and it,tables&gt;</code>tag.the tables is structured with rows(<code>&it;tr&gt;</code>)and cells,which can be either header cells(<code>&it;th&gt;</code>)or data cells(<code>&it;td&gt;</code>)attributes like<code>border</code>,<code>,<code>
+rowspan</code>and<code>colspan</code>can be used to enhance the tablets appearance and structure</p>
+<h2>Basic Table</h2>
+<table border="1">
+<tr>
+<th>header1</th>
+<th>header2</th>
+<th>header3</th>
+</tr>
+<tr>
+<td>row 1,cell 1</td>
+<td>row 1,cell 2</td>
+<td>row 1,cell 3</td>
+</tr>
+<tr>
+<td>row 2,cell 1</td>
+<td>row 2,cell 2</td>
+<td>row 2,cell 3</td>
+</tr>
+</table>
+<h2>table with rowspan</h2>
+<p>the <code>rowspan</code>attribute allows cell to span multiple rows.</p>
+<table border="1">
+<tr>
+<th>header 1</th>
+<th>header 2</th>
+<th>header 3</th>
+</tr>
+<tr>
+<td rowspan="2">rowspan 2 rows</td>
+<td>row 1,cell 2</td>
+<td>row 1,cell 3,/td>
+</tr>
+</table>
+<h2>table with colspan</h2>
+<p>the<code>colspan</code>attributes allows a cell to span multiple columns.</p>
+<table border="1">
+<tr>
+<th>header 1</th>
+<th>header 2</th>
+<th>header 3</th>
+</tr>
+<tr>
+<td>row 1,cell 1</td>
+<td colspan="2">colspan2 columns
+</td>
+</tr>
+<tr>
+<td>row 2,cell 1</td>
+<td>row 2,cell 2</td>
+<td>row 2,cell 3</td>
+</tr>
+</table>
+<h2>complex table example</h2>
+<p>this table combines both<code>rowspan
+</code>and<code>colspan</code>attributes</p>
+<table border="1">
+<tr>
+<th>header 1</th>
+<th>header 2</th>
+<th>header 3</th>
+<th>header 4</th>
+</tr.
+<tr>
+<td rowspan="2">rowspan 2 rows</td>
+<td>row 1,cell 2</td>
+<td colspan="2">colspan 2 columns</td>
+</tr>
+<tr>
+<td>row 2,cell 2</td>
+<td>row 2,cell 3</td>
+<td>row 2,cell 4</td>
+</tr>
+<tr>
+<td>row 2,cell 2</td>
+<td>row 2,cell 3</td>
+<td>row 2,cell 4</td>
+</tr>
+<tr>
+<td>row 3,cell 1</td> 
+<td colspan="3">colspan 3 columns</td>
+</tr>
+</table>
+</body>
+</html>
