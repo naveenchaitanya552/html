@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device_width, initial_scale=1.0">
+<title>CSS Box Model Demonstration</title>
+<style>
+body {
+font-family:Arial,sans-serif;
+margin:20px;
+}
+.box{
+width:200px;
+margin:20px;
+padding:15px;
+border: 5px solid:#333;
+background-color:#f0f0f0;
+padding:20px;
+}
+.box.content{
+    background_color:#fff;
+    padding:10px;
+}
+</style>
+</head>
+<body>
+<h1>CSS box model demonstration</h1>
+<div class="box">
+<div class="content">
+<p>This is the content area.</p>
+<p>The CSS Box Model includes:</p>
+<ul>
+<li><strong>content</strong>:the actual content of the element()text,image,etc</li>
+<li><strong>padding</strong>:space between the content and the element and the broder</li>
+<li><strong>broder</strong>:the broder surrodings the padding() and content</li>
+<li><strong>margin</strong>:space outside the broder; seperating the elemnt from the others<.li></ul>
+</div>
+</body>
+</html>
