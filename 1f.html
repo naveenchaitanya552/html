@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device_width,initial_scale=1.0">
+<title>embedding internal and external javascript</title>
+<script src="script.js"></script><!--link to external javascript file-->
+<script>
+//internal javascript
+function show Alert interval(){
+alert('This is an internal javascript alert!');
+}
+</script>
+</head>
+<body>
+<h1>embedding internal & external javascript</h1>
+<button on click="Show Alert Internal()">
+internal javascript Alert</button>
+<button onclick="show Alert external()">
+external javascript Alert</button>
+</body>
+</html>
